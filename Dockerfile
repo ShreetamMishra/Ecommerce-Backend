@@ -1,5 +1,5 @@
 # Use Maven 3.9.9 and Java 19 base image for the build phase
-FROM maven:3.9.9-openjdk-19 AS build
+FROM maven:3.8.5-openjdk-17 AS build
 # Output Maven and Java versions for tracking
 RUN mvn -v && java -version
 # Copy project files to the container
