@@ -9,8 +9,8 @@ RUN mvn clean package -DskipTests
 # List contents of the target directory for verification
 RUN ls /target
 
-# Use OpenJDK 19 for the runtime environment
-FROM openjdk:19-slim
+# Use OpenJDK 17 for the runtime environment
+FROM openjdk:17-slim
 # Output Java version for tracking
 RUN java -version
 # Copy the JAR file from the build stage to the runtime stage
